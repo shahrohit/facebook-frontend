@@ -1,0 +1,148 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+}
+
+.leftHeader {
+  display: flex;
+  align-items: center;
+}
+
+.leftHeaderLogo img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.leftHeaderSearchBox {
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5;
+  padding: 0.2rem;
+  border-radius: 20px;
+  margin: 0 10px;
+
+  height: 2.5rem;
+  width: 15rem;
+}
+
+.leftHeaderSearchBox svg {
+  height: 1.3rem;
+  width: 1.4rem;
+  margin-left: 0.2rem;
+}
+.leftHeaderSearchBox input {
+  all: unset;
+  padding: 0.1rem;
+  margin-left: 0.2rem;
+}
+
+/* ---------------------------------------- NavBar--------------------------------- */
+.navbar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* background: blue; */
+}
+.navbar .navbarChild {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.navbar .navbarChild span {
+  padding: 0 0;
+  flex: 1;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin: 0 0.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbarChild .active {
+  border-radius: 0;
+  border-bottom: 3px solid #1877f2;
+}
+.navbar .navbarChild .active:hover {
+  background-color: none !important;
+}
+.navbar .navbarChild span:hover {
+  cursor: pointer;
+  background-color: #f2f5f8;
+}
+
+/* ------------------- Right Menu ---------------------------- */
+.rightMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightMenuChild {
+  display: flex;
+}
+.rightMenuChild span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e6eb;
+  border-radius: 100%;
+  height: 2.3rem;
+  width: 2.3rem;
+  margin: 0 0.3rem;
+}
+
+/* ----------------------------------- Media Query ---------------------------- */
+@media only screen and (max-width: 950px) {
+  .navbar .navbarChild {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .rightMenuChild #menuIcon {
+    display: none;
+  }
+
+  .leftHeaderSearchBox {
+    width: 10rem;
+  }
+  .leftHeaderLogo img {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+  .leftHeaderSearchBox input {
+    width: 8rem;
+  }
+  #gamingIcon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    background: #f0f2f5;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .leftHeaderSearchBox {
+    display: none;
+    width: 100%;
+  }
+}

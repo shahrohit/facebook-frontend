@@ -1,0 +1,127 @@
+/* -------------------- Whats on Mind ----------------------- */
+.whatOnMind {
+  margin: 2rem 2px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.whatOnMindTop {
+  display: flex;
+}
+.whatOnMindTop img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.whatOnMindTop input {
+  flex: 1;
+  outline: none;
+  border: none;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.whatOnMindTop input:hover {
+  background-color: #e5e8eb;
+}
+
+.whatOnMind hr {
+  margin: 10px auto;
+  border: 1px solid #e5e8eb;
+}
+
+.whatOnMindBottom {
+  display: flex;
+  justify-content: space-around;
+}
+.whatOnMindBottom div {
+  display: flex;
+  align-items: center;
+}
+.whatOnMindBottom div p {
+  margin-left: 5px;
+}
+
+/* ------------------------ Post ---------------------------- */
+.post {
+  margin: 2rem 2px;
+  padding: 1rem 0;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+.postHeaderProfile {
+  display: flex;
+}
+.postHeaderProfile img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+.postHeaderProfileInfo {
+  margin-left: 10px;
+}
+.postHeaderProfileName {
+  font-weight: 500;
+}
+.postHeaderProfileTime {
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
+}
+
+.postHeaderIcons {
+  display: flex;
+  align-items: center;
+}
+.postHeaderIcons svg:first-child {
+  margin-right: 10px;
+}
+
+/* ------------------- Post Description ------------------- */
+.postDescritption {
+  margin: 5px 1rem;
+}
+
+/* ------------------ Post Images ---------------------------- */
+
+.postImages img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+/* ----------------------- Post Footer ------------------------ */
+
+.postFooter {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.like,
+.comment,
+.share {
+  display: flex;
+  align-items: center;
+}
+.postFooter img {
+  height: 25px;
+  width: 25px;
+  margin: 0 5px;
+}
+/* ------------------ Media Query ------------------------ */
+@media only screen and (max-width: 370px) {
+  .whatOnMindBottom div:last-child {
+    display: none;
+  }
+}
