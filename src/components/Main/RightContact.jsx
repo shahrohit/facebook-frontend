@@ -1,6 +1,6 @@
 import Contacts from "./Contacts";
 
-const RightContactHome = () => {
+const RightContact = () => {
   return (
     <div className="rightContactHome">
       {/* header */}
@@ -28,4 +28,4 @@ const RightContactHome = () => {
   );
 };
 
-export default RightContactHome;
+export default RightContact;

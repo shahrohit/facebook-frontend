@@ -4,6 +4,7 @@ import Story from "../Story/Story";
 import WhatOnMind from "../Post/WhatOnMind";
 import Post from "../Post/Post";
 
+import "./feed.css";
 const stories = [
   {
     id: "0",
@@ -37,33 +38,31 @@ const stories = [
   },
 ];
 
-const HomeContent = () => {
+const Feed = () => {
   return (
-    <div className="homeContent">
-      <div className="homeContentSection">
-        {/* Story */}
-        <section className="homeStorySection">
-          <CreateStory />
+    <>
+      {/* Story */}
+      <section className="feedStorySection">
+        <CreateStory />
 
-          {/* <Story /> */}
-          {stories.map((items) => {
-            return <Story key={items.id} src={items.src} name={items.name} />;
-          })}
-        </section>
-        {/* Whats on mind section */}
+        {/* <Story /> */}
+        {stories.map((items) => {
+          return <Story key={items.id} src={items.src} name={items.name} />;
+        })}
+      </section>
+      {/* Whats on mind section */}
 
-        {/* Post */}
-        <section>
-          <WhatOnMind />
-        </section>
+      {/* Post */}
+      <section>
+        <WhatOnMind />
+      </section>
 
-        <section className="homePostSection">
-          <Post />
-          <Post />
-        </section>
-      </div>
-    </div>
+      <section className="feedPostSection">
+        <Post />
+        <Post />
+      </section>
+    </>
   );
 };
 
-export default HomeContent;
+export default Feed;

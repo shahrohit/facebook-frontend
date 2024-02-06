@@ -1,13 +1,8 @@
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
+import Routing from "./Routing";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Home />
-    </>
-  );
+  const login = true;
+  return <Routing login={login} />;
 }
 
 export default App;

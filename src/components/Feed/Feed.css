@@ -1,0 +1,9 @@
+.feedStorySection {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1px;
+  scroll-snap-type: x mandatory;
+}
+.feedStorySection::-webkit-scrollbar {
+  display: none;
+}

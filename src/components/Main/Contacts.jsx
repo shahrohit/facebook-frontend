@@ -1,5 +1,3 @@
-import React from "react";
-
 const Contacts = ({ name, src }) => {
   return (
     <div className="homeContactBox">

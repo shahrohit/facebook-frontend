@@ -1,5 +1,6 @@
 /* ------------------------- Crete Story ---------------------------- */
 .createStory {
+  scroll-snap-align: start;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -56,6 +57,7 @@
 
 /* -------------------------------- Stroy ---------------------------------------- */
 .story {
+  scroll-snap-align: start;
   position: relative;
   max-height: 250px;
   max-width: 150px;

@@ -49,15 +49,20 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  /* background: blue; */
 }
 .navbar .navbarChild {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   width: 80%;
+  /* background: red; */
 }
+.navlink {
+  all: unset;
+  width: 100%;
 
+  /* background-color: yellow; */
+}
 .navbar .navbarChild span {
   padding: 0 0;
   flex: 1;
@@ -72,6 +77,8 @@
 .navbar .navbarChild .active {
   border-radius: 0;
   border-bottom: 3px solid #1877f2;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .navbar .navbarChild .active:hover {
   background-color: none !important;
@@ -104,8 +111,15 @@
 
 /* ----------------------------------- Media Query ---------------------------- */
 @media only screen and (max-width: 950px) {
+  .navbar {
+    width: 100%;
+  }
   .navbar .navbarChild {
     width: 100%;
+  }
+  .navbar .navbarChild .navlink {
+    width: 100%;
+    margin: 1px;
   }
 }
 
@@ -124,6 +138,7 @@
   .leftHeaderSearchBox input {
     width: 8rem;
   }
+
   #gamingIcon {
     display: none;
   }

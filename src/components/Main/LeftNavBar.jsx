@@ -1,5 +1,5 @@
 import React from "react";
-import LeftNavHomeMenu from "./LeftNavHomeMenu";
+import LeftNavHomeMenu from "./LeftNavBarMenu";
 
 const menu = [
   { iconSrc: "/friends.png", title: "Friends" },
@@ -14,7 +14,7 @@ const menu = [
   { iconSrc: "/gaming.png", title: "Gaming Video" },
 ];
 
-const LeftNavHome = () => {
+const LeftNavBar = () => {
   return (
     <div className="leftNavHome">
       {menu.map((items) => {
@@ -30,4 +30,4 @@ const LeftNavHome = () => {
   );
 };
 
-export default LeftNavHome;
+export default LeftNavBar;
